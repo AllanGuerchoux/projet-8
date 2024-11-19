@@ -1,23 +1,20 @@
-import '../styles/App.css';
 
+import { BrowserRouter as Router , Route, Routes } from 'react-router-dom';
+import Acceuil from './Acceuil';
+import Apropos from './Apropos';
+import Contact from './Contact';
+import Projets from './Projets';
+import '../styles/App.css';
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    return (
+        <Router>
+            <Routes>
+                <Route path="/" element={<Acceuil />} />
+                <Route path="/A-propos" element={<Apropos />} />
+                <Route path="/contact" element={<Contact />} />
+                <Route path="/Projets" element={<Projets />} />
+            </Routes>
+        </Router>
   );
 }
 
