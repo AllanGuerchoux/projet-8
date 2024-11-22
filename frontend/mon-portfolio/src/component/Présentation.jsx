@@ -1,9 +1,11 @@
 import React from 'react';
-
+import Portrait from './Portrait';
+import PresentationTexte from './PresentationTexte';
 const Présentation = () => {
     return (
-        <section>
-            <p>Bonjour, je suis Allan Guerchoux Développeur junior</p>
+        <section className='sectionPrincipale'>
+            <Portrait />
+            <PresentationTexte/>
         </section>
     );
 };

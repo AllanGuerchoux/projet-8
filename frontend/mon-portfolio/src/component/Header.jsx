@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-/*import './Header.css'; */
+
 
 function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -11,7 +11,7 @@ function Header() {
   };
 
   return (
-    <header className="header">
+    <header className={`header ${isMenuOpen ? 'menu-open' :''}`}>
       <div className="header-name">
         <h1>Allan Guerchoux</h1>
       </div>
