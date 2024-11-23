@@ -1,8 +1,18 @@
 /* Header Général */
+
 *{
   margin: 0;
   margin-top: 0;
   font-family: "Manrope", serif;
+}
+html{
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+body{
+  display: flex;
+  min-height: 100%;
 }
 .header {
   display: flex;
@@ -13,7 +23,14 @@
   color: white;
 }
 
+main{
+  min-height: calc(100vh - 45px)
+}
 
+a{
+  text-decoration: none;
+  color: black;
+}
 footer{
   display: flex;
   justify-content: space-between;
@@ -21,6 +38,7 @@ footer{
   padding: 1rem 2rem;
   background-color: #4e45cb;
   color: white;
+  margin-top: auto;
 }
 /* Navbar normale (desktop) */
 .navbar {
@@ -110,7 +128,7 @@ footer{
     align-items: center;
     opacity: 1;
     pointer-events: all;
-    margin: 5px;
+    margin: 3px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     transition: all 0.3s ease-out;
@@ -121,15 +139,29 @@ footer{
   }
   .sectionPrincipale{
     display: flex;
-    margin: 3px;
+    flex-direction: column;
+   
     width: 100%;
-    height: 100vh;
+    height: auto;
+    align-items: center;
   }
-
+  .portraitWrapper{
+    width: 70%;
+    margin-top: 30px;
+  }
   .portrait{
     width: 100% ;
     border-radius: 8px; /* Optionnel, pour arrondir les coins */
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.25); /* Ombre plus douce */
+  }
+  .textWrapper{
+    display: flex;
+    width: 80%;
+    text-align: center;
+  }
+  .h2Realisation{
+    margin-top:10px ;
+    margin-bottom:20px ;
   }
 
   footer{
@@ -139,10 +171,12 @@ footer{
     margin: 0;
     margin-left: 3px;
     margin-right: 3px;
+    margin-top: auto;
   }
   .navFooter{
     display: flex;
     width: 100%;
+    justify-content: space-evenly;
   }
   .navFooter a {
     margin: 0 ;
@@ -156,6 +190,62 @@ footer{
     height: auto;
     
   }
+  #projets{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 3px;
+  }
+  .cardWrapper{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px ;
+  }
+  .cardProjet{
+    width: 90%;
+    height: 255px;
+    display: flex;
+    align-items: flex-end;
+    
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.25);
+  }
+  .cardLink{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  .cardTitre{
+    padding-bottom: 20px;
+    width: 45%;       
+    height: 20%;  
+    display: flex;
+    align-items: flex-end;
+    padding-left: 20px;
+    color: white;
+    font-size: 18px;
+    text-align: left;
+    z-index: 1;
+    position: absolute;
+    text-shadow:-1px -1px 0 black,  
+                1px -1px 0 black,
+                -1px 1px 0 black,
+                1px 1px 0 black;
+  }
+  .imgCardAccueil{
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 8px;
+  }
   .card {
     display: flex;
     flex-direction: column;
@@ -165,5 +255,320 @@ footer{
     margin: 10px;
     text-decoration: none;
     color: black;
+  }
+
+  #TitreEtDescription{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  #outils{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  }
+  .textProjetAlign{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .compétenceAlign{
+    margin: 20px;
+    text-align: center;
+  }
+
+  .bigImageWrapper{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .bigImageProjet{
+    width: 90%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px;
+  }
+  .sectionProjetDef{
+    width: 100%;
+  }
+
+  .sectionProjetDef img{
+    width: 54%;
+  }
+
+
+
+}
+
+/* Tablette classique */
+@media (min-width:769px) and (max-width: 1024px) {
+
+  header{
+    border-radius: 0 0 10px 10px;
+
+  }
+  .sectionPrincipale{
+    display: flex;
+    flex-direction: column;
+    
+    width: 100%;
+    height: auto;
+    align-items: center;
+  }
+  .portraitWrapper{
+    width: 50%;
+    margin-top: 30px;
+  }
+  .portrait{
+    width: 100% ;
+    border-radius: 8px; /* Optionnel, pour arrondir les coins */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.25); /* Ombre plus douce */
+  }
+  .textWrapper{
+    display: flex;
+    width: 80%;
+    text-align: center;
+    justify-content: center;
+  }
+
+  #projets{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    
+  }
+  .cardWrapper{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 20px;
+  }
+  .cardProjet{
+    width: 45%;
+    height: 100%;
+    max-height: 300px;
+    display: flex;
+    align-items: flex-end;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.25);
+  }
+  .cardLink{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  .cardTitre{
+    padding-bottom: 20px;
+    width: 45%;       
+    height: 20%;  
+    display: flex;
+    align-items: flex-end;
+    padding-left: 20px;
+    color: white;
+    font-size: 18px;
+    text-align: left;
+    z-index: 1;
+    position: absolute;
+    text-shadow:-1px -1px 0 black,  
+                1px -1px 0 black,
+                -1px 1px 0 black,
+                1px 1px 0 black;
+  }
+  .imgCardAccueil{
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 8px;
+  }
+  .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    margin: 10px;
+    text-decoration: none;
+    color: black;
+  }
+
+  .navFooter{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+  }
+  .navFooter a {
+    margin: 0 ;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+  }
+
+  .navbar{
+    display: flex;
+    width: 50%;
+    justify-content: space-evenly;
+  }
+  .bigImageWrapper{
+    width: 100%;
+  }
+
+  .bigImageProjet{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+
+
+
+  footer{
+    margin-top: auto;
+    border-radius: 10px 10px 0 0;
+  }
+}
+
+/* Desktop classique */
+@media (min-width: 1024px )   {
+  #root{
+    display: flex;
+    justify-content: center;
+
+  }
+  header{
+    max-width: 1440px;
+    border-radius: 0 0 10px 10px;
+    
+  }
+  .sectionPrincipale{
+    display: flex;
+    
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    flex-direction: row;
+    flex-grow: 1;
+  }
+  .portraitWrapper{
+    width: 20%;
+    margin-top: 30px;
+  }
+  .portrait{
+    width: 100% ;
+    border-radius: 8px; /* Optionnel, pour arrondir les coins */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.25); /* Ombre plus douce */
+  }
+  .textWrapper{
+    display: flex;
+    width: 30%;
+    text-align: center;
+    justify-content: center;
+  }
+
+  #projets{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .cardWrapper{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 20px;
+  }
+  .cardProjet{
+    width: 45%;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  .cardLink{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  .cardTitre{
+    padding-bottom: 20px;
+    width: 45%;       
+    height: 20%;  
+    display: flex;
+    align-items: flex-end;
+    padding-left: 20px;
+    color: white;
+    font-size: 18px;
+    text-align: left;
+    z-index: 1;
+    position: absolute;
+    text-shadow:-1px -1px 0 black,  
+                1px -1px 0 black,
+                -1px 1px 0 black,
+                1px 1px 0 black;
+  }
+  .imgCardAccueil{
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 8px;
+  }
+  .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    margin: 10px;
+    text-decoration: none;
+    color: black;
+  }
+
+  footer{
+    border-radius: 10px 10px 0 0;
+  }
+
+  .navFooter{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+  }
+  .navFooter a {
+    margin: 0 ;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+  }
+
+  .navbar{
+    display: flex;
+    width: 50%;
+    justify-content: space-evenly;
   }
 }

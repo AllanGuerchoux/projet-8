@@ -1,16 +1,20 @@
 [
     {
         "id": "1",
-        "title": "Projet5",
-        "picture": [],
-        "description": "Description du Projet5",
-        "lienGitHub": "https://github.com/AllanGuerchoux/projet5/tree/main"
+        "title": "Kasa",
+        "picture": ["https://cdn.discordapp.com/attachments/663841364965851146/1309920198429638797/image.png?ex=674355c0&is=67420440&hm=10577ad63d4e9666af3467e1a928d68a7cac9c6a15ebb2db4e2075915749e824&"],
+        "description": "Dans ce projet, nous devions implémenter le front-end d'une application web en utilisant React et React router pour créer une expérience utilisateur moderne et réactive",
+        "outils": ["React", "Node.js", "Sass"],
+        "compétence": ["Initialiser une application avec Create React App","Configurer la navigation entre les pages de l'application avec React Router","Développer des éléments de l'interface d'un site web grâce à des composants React","Mettre en œuvre des animations CSS","Développer une interface web avec Sass"],
+        "lienGitHub": "https://github.com/AllanGuerchoux/projet5"
     },
     {
         "id": "2",
-        "title": "Projet6",
-        "picture": [],
-        "description": "Description du Projet6",
+        "title": "Mon vieu grimoire",
+        "picture": ["https://cdn.discordapp.com/attachments/663841364965851146/1309920483772338186/image.png?ex=67435604&is=67420484&hm=105bce9e9003c9a337e1c503c55a0675f6e559a8cecc17d35a965ae2887c3bdb&"],
+        "description": "Dans ce projet, nous devions développez le back-end d'une site de notation de livres en utilisant Express et en le connectant à une base de données MongoDB",
+        "outils": ["NodeExpress", "MongoDB", "Mongoose "],
+        "compétence": ["Implémenter un modèle logique de données conformément à la réglementation","Mettre en œuvre des opérations CRUD de manière sécurisée","Stocker des données de manière sécurisée"],
         "lienGitHub": "https://github.com/AllanGuerchoux/projet6-test"
     }
 ]
