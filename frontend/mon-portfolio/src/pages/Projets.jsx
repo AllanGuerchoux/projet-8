@@ -23,7 +23,7 @@ const Projets = () => {
             <Header /> 
             <main >
                 
-            <section className='sectionPrincipale'>
+            <section className='sectionPrincipaleProjet'>
                 <ProjetInfo 
                     title={logement.title} 
                 />
@@ -39,8 +39,9 @@ const Projets = () => {
 
                 <Outils 
                     outils={logement.outils || "Aucun outil spécifié"} // Valeur par défaut
+                    
                 />
-
+                <a className='pushDown' href={logement.lienGitHub}>lien vers le Repo Github</a>
                 </section>
             </main>
             <Footer />

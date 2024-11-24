@@ -14,7 +14,7 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="contactContainer">
+    <div id="contactContainer">
       <h2 className="contactTitle">Me contacter</h2>
       <div className="emailBlock">
         <p className="emailText">allan.gcx@gmail.com</p>

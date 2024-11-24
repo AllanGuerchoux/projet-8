@@ -9,6 +9,7 @@ const Acceuil = () => {
         <div className='pageWrapper'>
            <Header /> 
            <MainAcceuil />
+           
            <ContactForm />
            <Footer />
         </div>

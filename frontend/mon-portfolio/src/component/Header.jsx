@@ -18,9 +18,10 @@ function Header() {
 
       {/* Navbar pour desktop */}
       <nav className={`navbar ${isMenuOpen ? 'active' : ''}`}>
-        <Link to="/">Accueil</Link>
-        <Link to="/a-propos">À propos</Link>
-        <Link to="/contact">Contact</Link>
+            <Link to="/">Accueil</Link>
+            <a href='/#Formation'>Formation</a>
+            <a href='/#projets'>Réalisation</a>
+            <a href='/#contactContainer'>Contacte</a>
       </nav>
 
       {/* Burger Menu pour mobile */}

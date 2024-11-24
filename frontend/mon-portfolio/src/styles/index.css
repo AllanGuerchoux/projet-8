@@ -25,6 +25,16 @@ header{
   padding: 20px;
 }
 
+.sectionPrincipaleProjet{
+  display: flex
+;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pushDown{
+  margin-bottom: 50px;
+}
 
 a{
   text-decoration: none;
@@ -138,7 +148,7 @@ footer{
   .burger-menu {
     display: flex;
   }
-  .sectionPrincipale{
+  #sectionPrincipale{
     display: flex;
     flex-direction: column;
    
@@ -190,6 +200,31 @@ footer{
     width: 100%;
     height: auto;
     
+  }
+  #Formation{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .descriptionFormation{
+    text-align: center;
+    width: 80%;
+    
+  }
+  .listeFormation{
+    margin: 20px;
+    list-style: none;
+    padding: 0;
+  }
+  .elementListe{
+    margin: 5px;
+  }
+  .liensFormation{
+    display: flex;
+    flex-direction: column;
+  }
+  .liensFormation a {
+    cursor: pointer;
   }
   #projets{
     display: flex;
@@ -248,7 +283,7 @@ footer{
     border-radius: 8px;
   }
 
-  .contactContainer{
+  #contactContainer{
     display: flex;
     height: auto;
     align-items: center;
@@ -395,13 +430,16 @@ footer{
     display: flex;
     align-items: center;
   }
-  .sectionPrincipale{
+  #sectionPrincipale{
     display: flex;
     flex-direction: column;
     
     width: 100%;
     height: auto;
     align-items: center;
+  }
+  #Formation{
+    display: flex;
   }
   .portraitWrapper{
     width: 50%;
@@ -419,6 +457,29 @@ footer{
     justify-content: center;
   }
 
+  #Formation{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .descriptionFormation{
+    text-align: center;
+    width: 80%;
+  }
+  .listeFormation{
+    list-style: none;
+    padding: 0;
+  }
+  .elementListe{
+    margin: 5px;
+  }
+  .liensFormation{
+    display: flex;
+    flex-direction: column;
+  }
+  .liensFormation a {
+    cursor: pointer;
+  }
   #projets{
     margin-top: 20px;
     display: flex;
@@ -518,7 +579,7 @@ footer{
     object-position: center;
   }
 
-  .contactContainer{
+  #contactContainer{
     display: flex;
     height: auto;
     align-items: center;
@@ -598,6 +659,58 @@ footer{
     border-radius: 10px 10px 0 0;
   }
 }
+#TitreEtDescription{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#outils{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+.textProjetAlign{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.compétenceAlign{
+  margin: 20px;
+  text-align: center;
+}
+
+.bigImageWrapper{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.bigImageProjet{
+  width: 90%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 10px;
+}
+.sectionProjetDef{
+  width: 100%;
+}
+
+.sectionProjetDef img{
+  width: 54%;
+}
+
+
+
+
+
+
+
+
+
 
 /* Desktop classique */
 @media (min-width: 1024px )   {
@@ -629,7 +742,7 @@ footer{
     display: flex;
     align-items: center;
   }
-  .sectionPrincipale{
+  #sectionPrincipale{
     display: flex;
     width: 100%;
     height: auto;
@@ -655,6 +768,32 @@ footer{
     justify-content: center;
   }
 
+  #Formation{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .Formation p {
+    padding-top:20px;
+  }
+  .descriptionFormation{
+    text-align: center;
+  }
+  .listeFormation{
+    margin: 20px;
+    list-style: none;
+    padding: 0;
+  }
+  .elementListe{
+    margin: 5px;
+  }
+  .liensFormation{
+    display: flex;
+    flex-direction: column;
+  }
+  .liensFormation a {
+    cursor: pointer;
+  }
   #projets{
     display: flex;
     flex-direction: column;
@@ -737,7 +876,7 @@ footer{
     justify-content: space-evenly;
   }
 
-  .contactContainer{
+  #contactContainer{
     display: flex;
     height: auto;
     align-items: center;
@@ -811,5 +950,50 @@ footer{
     font-weight: bold;
 }
 
+.sectionPrincipaleProjet{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#TitreEtDescription{
+  
+}
+#outils{
+  
 
 }
+.compétenceListe{
+  width: 50%;
+}
+.DescriptionProjet{
+ width: 50%;
+}
+.compétenceAlign{
+  width: 100%;
+}
+
+.bigImageWrapper{
+ max-width: 800px;
+ max-height: 350px;
+ overflow: hidden;
+}
+
+.bigImageProjet{
+object-fit: contain;
+}
+.sectionProjetDef{
+  
+}
+
+.sectionProjetDef img{
+  
+}
+
+
+
+
+
+
+}
+

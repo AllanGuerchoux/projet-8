@@ -3,7 +3,7 @@ import Portrait from './Portrait';
 import PresentationTexte from './PresentationTexte';
 const Présentation = () => {
     return (
-        <section className='sectionPrincipale'>
+        <section id='sectionPrincipale'>
             <Portrait />
             <PresentationTexte/>
         </section>

@@ -10,7 +10,7 @@
     },
     {
         "id": "2",
-        "title": "Mon vieu grimoire",
+        "title": "Mon vieux grimoire",
         "picture": ["https://cdn.discordapp.com/attachments/663841364965851146/1309920483772338186/image.png?ex=67435604&is=67420484&hm=105bce9e9003c9a337e1c503c55a0675f6e559a8cecc17d35a965ae2887c3bdb&"],
         "description": "Dans ce projet, nous devions développez le back-end d'une site de notation de livres en utilisant Express et en le connectant à une base de données MongoDB",
         "outils": ["NodeExpress", "MongoDB", "Mongoose "],
